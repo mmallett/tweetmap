@@ -1,0 +1,62 @@
+Script started on Wed 21 Oct 2015 12:09:26 AM UTC
+]0;vagrant@jupiter: /vagrantvagrant@jupiter:/vagrant$ eb create
+Enter Environment Name
+(default is mmallett-tweetmap-dev): mmallett-tweetmap2
+Enter DNS CNAME prefix
+(default is mmallett-tweetmap2): mmallett-tweetmap2
+Creating application version archive "b390".
+Uploading mmallett-tweetmap/b390.zip to S3. This may take a while.
+Upload Complete.
+Environment details for: mmallett-tweetmap2
+  Application name: mmallett-tweetmap
+  Region: us-west-2
+  Deployed Version: b390
+  Environment ID: e-3gdifeeamu
+  Platform: 64bit Amazon Linux 2015.03 v2.0.1 running Node.js
+  Tier: WebServer-Standard
+  CNAME: mmallett-tweetmap2.elasticbeanstalk.com
+  Updated: 2015-10-21 00:10:16.065000+00:00
+Printing Status:
+INFO: createEnvironment is starting.
+ -- Events -- (safe to Ctrl+C)INFO: Using elasticbeanstalk-us-west-2-110356791566 as Amazon S3 storage bucket for environment data.
+ -- Events -- (safe to Ctrl+C)INFO: Created security group named: sg-a2553ec6
+ -- Events -- (safe to Ctrl+C)INFO: Created load balancer named: awseb-e-3-AWSEBLoa-15J9GJKA7PU4E
+ -- Events -- (safe to Ctrl+C)INFO: Environment health has transitioned to Pending. There are no instances.
+ -- Events -- (safe to Ctrl+C)INFO: Created Auto Scaling launch configuration named: awseb-e-3gdifeeamu-stack-AWSEBAutoScalingLaunchConfiguration-SW66DOIRGBNU
+ -- Events -- (safe to Ctrl+C)INFO: Added instance [i-efafbf29] to your environment.
+ -- Events -- (safe to Ctrl+C)INFO: Waiting for EC2 instances to launch. This may take a few minutes.
+ -- Events -- (safe to Ctrl+C)INFO: Created Auto Scaling group named: awseb-e-3gdifeeamu-stack-AWSEBAutoScalingGroup-QDTCO2ONDL5L
+ -- Events -- (safe to Ctrl+C)INFO: Created Auto Scaling group policy named: arn:aws:autoscaling:us-west-2:110356791566:scalingPolicy:b3e97a16-9b3a-42f2-85a2-5390e6501748:autoScalingGroupName/awseb-e-3gdifeeamu-stack-AWSEBAutoScalingGroup-QDTCO2ONDL5L:policyName/awseb-e-3gdifeeamu-stack-AWSEBAutoScalingScaleUpPolicy-917H3MNHKFE6
+ -- Events -- (safe to Ctrl+C)INFO: Created Auto Scaling group policy named: arn:aws:autoscaling:us-west-2:110356791566:scalingPolicy:573e463e-f1c8-487d-83db-b9b8c3de156e:autoScalingGroupName/awseb-e-3gdifeeamu-stack-AWSEBAutoScalingGroup-QDTCO2ONDL5L:policyName/awseb-e-3gdifeeamu-stack-AWSEBAutoScalingScaleDownPolicy-22FYWBXVQBPV
+ -- Events -- (safe to Ctrl+C)INFO: Created CloudWatch alarm named: awseb-e-3gdifeeamu-stack-AWSEBCloudwatchAlarmHigh-10OCNOBMZDI8A
+ -- Events -- (safe to Ctrl+C)INFO: Created CloudWatch alarm named: awseb-e-3gdifeeamu-stack-AWSEBCloudwatchAlarmLow-30JBLJ6F8779
+ -- Events -- (safe to Ctrl+C)^C                                
+
+]0;vagrant@jupiter: /vagrantvagrant@jupiter:/vagrant$ eb status
+Environment details for: mmallett-tweetmap2
+  Application name: mmallett-tweetmap
+  Region: us-west-2
+  Deployed Version: b390
+  Environment ID: e-3gdifeeamu
+  Platform: 64bit Amazon Linux 2015.03 v2.0.1 running Node.js
+  Tier: WebServer-Standard
+  CNAME: mmallett-tweetmap2.elasticbeanstalk.com
+  Updated: 2015-10-21 00:13:44.884000+00:00
+  Status: Launching
+  Health: Green
+]0;vagrant@jupiter: /vagrantvagrant@jupiter:/vagrant$ eb status
+Environment details for: mmallett-tweetmap2
+  Application name: mmallett-tweetmap
+  Region: us-west-2
+  Deployed Version: b390
+  Environment ID: e-3gdifeeamu
+  Platform: 64bit Amazon Linux 2015.03 v2.0.1 running Node.js
+  Tier: WebServer-Standard
+  CNAME: mmallett-tweetmap2.elasticbeanstalk.com
+  Updated: 2015-10-21 00:15:51.898000+00:00
+  Status: Ready
+  Health: Green
+]0;vagrant@jupiter: /vagrantvagrant@jupiter:/vagrant$ exit
+exit
+
+Script done on Wed 21 Oct 2015 12:17:07 AM UTC
